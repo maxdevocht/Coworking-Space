@@ -6,7 +6,7 @@
   --color-red: #c65858;
 
   --logo-font-size: 1.25rem;
-  --h1-font-size: 2.5rem;
+  --h1-font-size: 3rem;
 }
 
 * {
@@ -68,14 +68,59 @@ body {
 }
 
 /* header styling */
-.header {
-  padding: 30px 25px;
-  width: 80%;
-}
-
 .header--title {
+  margin: 30px 25px;
+  width: 80%;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-size: var(--h1-font-size);
   color: var(--color-black);
+}
+
+/* card styling */
+.card {
+  margin: 30px 25px;
+  padding: 5px;
+  background-color: var(--color-black);
+  border-radius: 10px;
+}
+
+.card--badge {
+  position: absolute;
+  padding: 10px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  
+}
+
+.card--img {
+  border-radius: 5px;
+}
+
+.card--bottom {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.description {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--color-white);
+}
+
+.card--btn {
+  border: none;
+  background-color: var(--color-red);
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--color-white);
+  padding: 10px 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
 }
