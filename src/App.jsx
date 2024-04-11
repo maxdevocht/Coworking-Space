@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Card from './components/Card'
 import Chatbox from './components/Chatbox.jsx'
+import Footer from './components/Footer.jsx'
 import data from '../data.js'
 import './App.css'
 
@@ -21,8 +22,11 @@ export default function App() {
     <>
       <Navbar />
       <Header/>
-      {cards}
+      <div className="cards">
+        {cards}
+      </div>
       <Chatbox />
+      <Footer />
     </>
   )
 }

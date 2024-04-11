@@ -79,9 +79,15 @@ body {
 }
 
 /* card styling */
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .card {
-  flex: 1 400px;
+  flex: 1 300px;
   margin: 30px 25px;
   padding: 5px;
   background-color: var(--color-black);
@@ -117,7 +123,8 @@ body {
   color: var(--color-white);
 }
 
-.card--btn {
+.card--btn,
+.contact--btn {
   border: none;
   background-color: var(--color-red);
   font-family: 'Ubuntu', sans-serif;
@@ -145,4 +152,60 @@ body {
 .chatbox i {
   margin: auto;
   font-size: var(--logo-font-size);
+}
+
+/* footer styling */
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: 'Ubuntu', sans-serif;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer--adress,
+.footer--socials,
+.footer--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .5rem;
+}
+
+.logo2 {
+  display: flex;
+  gap: 3px;
+}
+
+.logo2 i {
+  font-size: var(--logo-font-size);
+  color: var(--color-red);
+}
+
+.logo--name2 {
+  font-size: var(--logo-font-size);
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: -1px;
+}
+
+.adress, {
+  font-size: .8rem;
+}
+
+.social--title,
+.contact--title {
+  font-size: 1.25rem;
+}
+
+.social--logo {
+  font-size: 1.25rem;
+  display: flex;
+  gap: .75rem;
+  color: var(--color-red);
+}
+
+.contact--p {
+  margin-bottom: .75rem;
 }
