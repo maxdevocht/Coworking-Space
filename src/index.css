@@ -6,6 +6,7 @@
   --color-red: #c65858;
 
   --logo-font-size: 1.25rem;
+  --h1-font-size: 2.5rem;
 }
 
 * {
@@ -52,14 +53,29 @@ body {
 
 .logo i {
   font-size: var(--logo-font-size);
+  color: var(--color-red);
 }
 
 .logo--name {
   font-size: var(--logo-font-size);
   font-family: 'Ubuntu', sans-serif;
+  letter-spacing: -1px;
 }
 
 .nav--menu{
   font-size: 1.5rem;
   color: var(--color-white);
+}
+
+/* header styling */
+.header {
+  padding: 30px 25px;
+  width: 80%;
+}
+
+.header--title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: var(--h1-font-size);
+  color: var(--color-black);
 }
