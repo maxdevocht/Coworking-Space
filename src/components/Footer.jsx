@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer">
             <div className="footer--adress">
                 <div className="logo2">
-                    <i class="ai-location"></i>
+                    <i class="ri-map-pin-fill"></i>
                     <h1 className="logo--name2">WeBarelyWork</h1>
                 </div>
                 <p className="adress">
